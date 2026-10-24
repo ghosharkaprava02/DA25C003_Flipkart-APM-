@@ -72,7 +72,7 @@ To regenerate the PDF, use Python with `reportlab` and `pypdf`, Windows Arial fo
 python scripts/build_case.py --template "PATH/TO/Prompt 1 _ Case Submission _ Flipkart APM 2029 (2).pdf"
 ```
 
-The case prose is **926 words** including section headings; all extracted text on the two body pages totals **1,021 words** including diagram and page furniture. Body paragraphs use **9.5 pt = 12.67 CSS px**. The official original cover and blank body pages are reused; no template is invented. The source template is read locally and not separately redistributed.
+The revised PDF has **1,091 extracted words** across its two main pages, including headings, diagram labels, evidence cards and page furniture. Body paragraphs use **9.25 pt = 12.33 CSS px**. The official original cover and blank body pages are reused; no template is invented. The source template is read locally and not separately redistributed.
 
 ## Boundaries of this prototype
 
