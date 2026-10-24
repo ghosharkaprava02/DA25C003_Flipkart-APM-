@@ -17,8 +17,8 @@ Checked 24 October 2026. This report distinguishes automated controller/policy v
 - User text is escaped before HTML insertion. Corrupt persisted data falls back with a visible notice.
 - No application fetch/API call, external fonts, trackers, model keys or runtime dependencies. Research links require an intentional click.
 - ZIP integrity and byte comparison against the source assets pass. ZIP implementation contains only HTML, CSS and JavaScript. Favicon and diagrams are inline SVG markup inside HTML/JS.
-- PDF has four A4 portrait pages: preserved official cover, exactly two body pages, one optional appendix. The case prose has 926 words including section headings; **all extracted words on the two body pages total 1,021**, including diagram, headers and footers. Both are below 1,200.
-- Body paragraphs use 9.5 pt (12.67 CSS px). Cover and original corner branding were preserved from the supplied template. All four final PDF pages were rendered to PNG and visually inspected; a paragraph-heading parsing issue was repaired before the final render.
+- PDF has four A4 portrait pages: preserved official cover, exactly two body pages, one optional appendix. The revised case has **1,091 extracted words on the two main pages**, including headings, cards, diagrams, headers and footers; this is below 1,200.
+- Body paragraphs use 9.25 pt (12.33 CSS px); other prose and annotations range from 10 to 12.93 CSS px. Cover and original corner branding were preserved from the supplied template. All four final PDF pages were rendered to PNG and visually inspected; a paragraph-heading parsing issue was repaired before the final render.
 
 ## Verification limits / candidate checks still required
 
@@ -37,3 +37,8 @@ Checked 24 October 2026. This report distinguishes automated controller/policy v
 5. Refresh. Check contracts and history persist, then reset.
 6. Test at 375, 768 and 1440 px. Check no page-level horizontal scrollbar, readable controls, keyboard focus and no obscured buttons. At narrow sizes the navigation intentionally scrolls horizontally within its own row.
 7. Change expiry to 23 Oct 2040, remove a recipient, and pause a contract. Each should block its scenario. Restore defaults before recording.
+
+
+## PDF editorial revision
+
+The revised four-page document was rendered and every page visually inspected. Horizontal text bounds and vertical paragraph bounds passed. The original cover text and candidate details match the previous PDF exactly. The prototype and all application assets remain byte-for-byte unchanged. The revised case adds an editorial identity, distinct India/USA evidence cards, a Tokyo authority-boundary diagram, color-coded engine outcomes, selective principle emphasis, and a visible clickable prototype URL. All five PDF links (three research sources and two prototype links) were verified in the PDF annotations. No new study, scenario, metric or product outcome was introduced.
