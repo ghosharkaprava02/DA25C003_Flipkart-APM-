@@ -1,0 +1,8 @@
+{
+  "name": "unscripted",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A local, deterministic prototype of a personal AI intent firewall.",
+  "scripts": { "start": "node scripts/serve.cjs", "test": "node --test tests/*.test.cjs", "check": "node --check app.js && node --check engine.js" },
+  "engines": { "node": ">=18" }
+}
