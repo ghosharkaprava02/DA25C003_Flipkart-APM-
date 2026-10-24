@@ -16,7 +16,7 @@ Checked 24 October 2026. This report distinguishes automated controller/policy v
 - Passport records and contracts survive a simulated reload of the controller using the same stored data. Reset restores 47 seeded routines and the hidden first-stage recommendation.
 - User text is escaped before HTML insertion. Corrupt persisted data falls back with a visible notice.
 - No application fetch/API call, external fonts, trackers, model keys or runtime dependencies. Research links require an intentional click.
-- ZIP integrity and byte comparison against the source assets pass. ZIP implementation contains only HTML, CSS and JavaScript. Favicon and diagrams are inline SVG markup inside HTML/JS.
+- ZIP integrity passes. The ZIP contains one self-contained HTML file; its embedded CSS, engine and UI JavaScript match the original source contents. Favicon and diagrams are inline SVG markup inside HTML/JS.
 - PDF has four A4 portrait pages: preserved official cover, exactly two body pages, one optional appendix. The revised case has **1,091 extracted words on the two main pages**, including headings, cards, diagrams, headers and footers; this is below 1,200.
 - Body paragraphs use 9.25 pt (12.33 CSS px); other prose and annotations range from 10 to 12.93 CSS px. Cover and original corner branding were preserved from the supplied template. All four final PDF pages were rendered to PNG and visually inspected; a paragraph-heading parsing issue was repaired before the final render.
 
@@ -42,3 +42,8 @@ Checked 24 October 2026. This report distinguishes automated controller/policy v
 ## PDF editorial revision
 
 The revised four-page document was rendered and every page visually inspected. Horizontal text bounds and vertical paragraph bounds passed. The original cover text and candidate details match the previous PDF exactly. The prototype and all application assets remain byte-for-byte unchanged. The revised case adds an editorial identity, distinct India/USA evidence cards, a Tokyo authority-boundary diagram, color-coded engine outcomes, selective principle emphasis, and a visible clickable prototype URL. All five PDF links (three research sources and two prototype links) were verified in the PDF annotations. No new study, scenario, metric or product outcome was introduced.
+
+
+## Offline packaging fix
+
+The downloadable prototype now embeds CSS and both JavaScript files in a single HTML document. This fixes the unstyled empty shell caused by opening the source index.html without its companion files. Scripts run in the original order after the document elements exist. The ZIP contains only UNSCRIPTED/index.html, and a separate directly downloadable HTML is also supplied. Application source and policy behavior are unchanged. All 26 existing tests passed; the 10 workspace tests also run against the JavaScript extracted from the generated offline HTML. Browser-specific file-origin persistence still depends on browser settings.
