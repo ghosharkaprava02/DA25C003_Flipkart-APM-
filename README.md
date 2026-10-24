@@ -8,7 +8,11 @@ In 2040, an agent may know what you chose in 2036. That does not give it permiss
 
 ## Start in under a minute
 
-**No installation:** download [the prototype ZIP](submission/Arkaprava_Ghosh_IIT_Madras_Prototype.zip), extract it completely, and open `index.html` in a current desktop browser. The prototype uses only HTML, CSS, JavaScript with inline vector drawings. No network, API keys, login or build tools are needed.
+**Open online:** [Launch UNSCRIPTED](https://ghosharkaprava02.github.io/DA25C003_Flipkart-APM-/).
+
+**Run offline:** download [the single-file HTML](submission/Arkaprava_Ghosh_IIT_Madras_Prototype.html) using GitHub’s Download raw file button, then open the downloaded file in a current browser. Or download [the prototype ZIP](submission/Arkaprava_Ghosh_IIT_Madras_Prototype.zip), extract it, and open `UNSCRIPTED/index.html`.
+
+The offline HTML contains all CSS and JavaScript inside the file. No companion files, network, API keys, login, installation or build tools are needed. The root source `index.html` is for the full source checkout; downloading that file alone will omit its CSS and JavaScript.
 
 For the most predictable browser-local persistence and clipboard behavior, serve the repository using Node 18 or newer:
 
@@ -25,7 +29,8 @@ When opened directly from a file, storage availability depends on browser settin
 | File | Purpose |
 | --- | --- |
 | [Case PDF](submission/Arkaprava_Ghosh_IIT_Madras.pdf) | Preserved official cover with candidate details, two A4 portrait case pages, one optional reference appendix |
-| [Prototype ZIP](submission/Arkaprava_Ghosh_IIT_Madras_Prototype.zip) | Buildless offline prototype; extract and open `index.html` |
+| [Prototype ZIP](submission/Arkaprava_Ghosh_IIT_Madras_Prototype.zip) | Self-contained offline prototype; extract and open `UNSCRIPTED/index.html` |
+| [Single HTML](submission/Arkaprava_Ghosh_IIT_Madras_Prototype.html) | Same complete prototype, available as one directly downloadable file |
 | [Recording guide](docs/VIDEO_RECORDING_GUIDE.md) | A 2–3 minute walkthrough with exact clicks and narration |
 | [Editable case](docs/CASE_DRAFT.md) | Source text for the two body pages |
 | [Research register](docs/REFERENCES.md) | Primary-source links, populations and interpretation limits |
